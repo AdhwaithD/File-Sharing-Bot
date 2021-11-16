@@ -114,7 +114,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "✅️ Join Channel [✅️](https://telegra.ph/file/a37f19af38c4a0c2f1f74.jpg)",
                 url = client.invitelink)
         ]
     ]
@@ -122,7 +122,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = '🔄 Try Again 🔄',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
